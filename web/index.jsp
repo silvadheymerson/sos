@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>SOS- Sistema de Oferta e Serviços</title>
+<title>OfertAki- Sistema de Oferta e Serviços</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/datepicker3.css" rel="stylesheet">
@@ -68,8 +68,8 @@
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Pagina Inicial</a></li>
 			
-                        <li><a href="index.php?pg=funcionarios"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"></use></svg> Usuarios</a></li>
-			<li><a href="tables.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>
+                        <li><a href="index.php?pg=funcionarios"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"></use></svg> Profissionais</a></li>
+			
 			<li><a href="index.php?pg=cadastros"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastrar Oferta</a></li>
 			<li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> MInhas Ofertas</a></li>
 			
@@ -102,15 +102,7 @@
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-            <script type="text/java">
-                    if(isset($_GET['pg'])){
-                            $pg = $_GET['pg'];
-                            include($pg.'.php');
-                        }else{
-                            include('home.php');
-                        }
-                
-            </script>
+            
             
 		
         </div>	<!--/.main-->
