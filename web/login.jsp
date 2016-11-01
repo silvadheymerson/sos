@@ -28,7 +28,7 @@
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default">
                                 
-				<div class="panel-heading">Login      <h4><div style="float:right; font-size: 80%; position: relative; top:-15px" ><a href="cadastrar.jsp"><b>Criar login</b></a></div> </h4></div>
+				<div class="panel-heading">Login<h4><div style="float:right; font-size: 80%; position: relative; top:-15px" ><a href="cadastrarusuario.jsp"><b>Criar login</b></a></div> </h4></div>
                                 
 				<div class="panel-body">
 					<form role="form">
