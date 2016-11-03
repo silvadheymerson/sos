@@ -20,7 +20,7 @@
                             <div class="col-sm-12">
                                 <div class="carousel-content centered">
                                     <center>  <h2 class="animation animated-item-1">Bem Vindo ao OfertAki</h2> </center>
-                                <center>    <p class="animation animated-item-2">Site para ofertas e buscas de serviços em geral</p></center>
+                                <center>    <p class="animation animated-item-2">Site para ofertas e buscas de serviços em geral.</p></center>
                                 </div>
                             </div>
                         </div>
@@ -31,10 +31,10 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content centered">
-                                   <h2 class="animation animated-item-1">Avaliação dos profissionais</h2>
-                                  <p class="animation animated-item-2">Antes de contratar, voçê pode avaliar o curriculum do profissional e ver a nota de seus clientes</p>
-                                    <br>
-                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                <center>   <h2 class="animation animated-item-1"> Avaliacão do Profissional </h2> </center>
+                               <center>   <p class="animation animated-item-2">Antes de contratar, voçê pode avaliar o curriculum do profissional e ver a nota de seus clientes.</p></center>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -45,10 +45,9 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Works Seamlessly Well on All Devices</h2>
-                                    <p class="animation animated-item-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae euismod lacus. Maecenas in tempor lectus. Nam mattis, odio ut dapibus ornare, libero. </p>
-                                    <br>
-									<a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                    <h2 class="animation animated-item-1">Varios serviços disponiveis</h2>
+                                    <p class="animation animated-item-2">Manutenção de Computadores, Mecânico , Diaristas , Moda e Beleza e Etc.  </p>
+                                    
                                 </div>
                             </div>
                         </div>
