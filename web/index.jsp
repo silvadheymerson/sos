@@ -111,7 +111,7 @@
 	        		<div class="col-md-4 col-sm-6">
 	        			<div class="service-wrapper">
 		        			<i class="icon-briefcase"></i>
-		        			<h3>Curabitur mollis</h3>
+		        			<h3>Serviços Especializado</h3>
 		        			<p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
 		        			<a href="#" class="btn">Read more</a>
 		        		</div>
