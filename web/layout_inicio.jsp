@@ -59,12 +59,12 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="index.jsp">Inicio</a></li>
                     <li><a href="services.html">Serviços</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
                     <li><a href="contact-us.html">Contatos</a></li>
-                    <li><a href="about-us.html">Fazer Login</a></li>
+                    <li><a href="login.jsp">Fazer Login</a></li>
                 </ul>
             </div>
         </div>
