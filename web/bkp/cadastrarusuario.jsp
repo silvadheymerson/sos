@@ -53,7 +53,7 @@
 									  
 									  
 									  <button type="submit" class="btn btn-primary">Confirmar</button>
-                                                                            <a class="btn btn-danger"href="login.jsp">Voltar</a>
+                                                                            <a class="btn btn-danger" href="login.jsp">Voltar</a>
 					</form>
 				</div>
 			</div>
