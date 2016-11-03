@@ -20,8 +20,8 @@
 	        			</p>
 		    		</div>				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>Our Social Networks</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+		    			<h3>Redes Sociais</h3>
+						<p>Sigam nos em nossas conta na rede sociais.</p>
 		    			<div>
 		    				<img src="img/icons/facebook.png" width="32" alt="Facebook">
 		    				<img src="img/icons/twitter.png" width="32" alt="Twitter">
@@ -30,14 +30,14 @@
 						</div>
 		    		</div>
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>About Our Company</h3>
-		    				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+		    			<h3>Sobre Nossa Empresa</h3>
+		    				<p>Nossa empresa buscar facilitar a sua vida no dia-a-dia , com serviços disponiveis de acordo com sua necessidade.</p>
 		    		</div>
 
 		    	</div>
 		    	<div class="row">
 		    		<div class="col-md-12">
-		    			<div class="footer-copyright">&copy; 2014 <a href="http://www.vactualart.com/portfolio-item/basica-a-free-html5-template/">Basica</a> Bootstrap HTML Template. By <a href="http://www.vactualart.com">Vactual Art</a>.</div>
+		    			<div class="footer-copyright">&copy; 2016 <a href="#">OfertAki</a> Site oficial.</div>
 		    		</div>
 		    	</div>
 		    </div>
