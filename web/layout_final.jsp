@@ -11,12 +11,12 @@
 		    	<div class="row">
 				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>Contact Us</h3>
+		    			<h3>Contatos</h3>
 		    			<p class="contact-us-details">
-	        				<b>Address:</b> 123 Downtown Avenue, Manhattan, New York, United States of America<br/>
-	        				<b>Phone:</b> +1 123 45678910<br/>
-	        				<b>Fax:</b> +1 123 45678910<br/>
-	        				<b>Email:</b> <a href="mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>
+	        				<b>Endereço</b> Rua 10 de Julho, 442 , Placas<br/>
+	        				<b>Telefone:</b> (68)3225-5585<br/>
+	        				<b>Celular:</b> (68)99986-8971<br/>
+	        				<b>Email:</b> <a href="#">ofertaki@hotmail.com</a>
 	        			</p>
 		    		</div>				
 		    		<div class="col-footer col-md-4 col-xs-6">
