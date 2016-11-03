@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author SEE
  */
-@WebServlet(name = "CadastrarUsuario", urlPatterns = {"/cadastrarusuario"})
+@WebServlet(name = "CadastrarUsuario", urlPatterns = {"/cadastrarUsuario"})
 public class CadastrarUsuario extends HttpServlet {
 
     /**
@@ -72,7 +72,22 @@ public class CadastrarUsuario extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       Usuario usuario = new Usuario();//cria o objeto contato
+        
+        //preenche o objeto contato
+        usuario.setNome(request.getParameter("nome"));
+        usuario.setEmail(request.getParameter("email"));
+        usuario.setSenha1(request.getParameter("senha1"));
+        usuario.setSenha2(request.getParameter("senha2"));
+        UsuarioImpl contatoDao = new UsuarioImpl();//cria o objeto contatoDao
+        
+        //salva 
+        usuarioDao.salvar(usuario);
+        //retorna pra a tela de cadastro
+        response.sendRedirect("cadastrarusuario.jsp"); 
+        
+        
+        
     }
 
     /**

@@ -31,7 +31,7 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Login</div>
 				<div class="panel-body">
-                                    <form id="formExemplo" method="POST" action="cadastrarusuario" data-toggle="validator" role="form" >
+                                    <form id="formExemplo" method="POST" action="cadastrarUsuario" data-toggle="validator" role="form" >
 									  <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
                                                                                 <input id="textNome" name="nome" class="form-control"  type="text">
