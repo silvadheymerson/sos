@@ -23,7 +23,7 @@ public class UsuarioImpl implements UsuarioDao {
 	public void salvar(Usuario usuario) {
 		try {
 			String sql = "insert into usuarios "
-                                + "(nome, email, senha1 , senha2) values(?,?)";
+                                + "(nome, email, senha1 , senha2) values(?,?,?,?)";
 			
 			stmt = conn.prepareStatement(sql);
 			
