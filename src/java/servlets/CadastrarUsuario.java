@@ -86,7 +86,7 @@ public class CadastrarUsuario extends HttpServlet {
         //salva 
         usuarioDao.salvar(usuario);
         //retorna pra a tela de cadastro
-        response.sendRedirect("cadastrarusuario.jsp"); 
+        response.sendRedirect("cadastrousuario.jsp"); 
         
         
         
