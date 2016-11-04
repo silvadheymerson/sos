@@ -42,7 +42,7 @@ public class UsuarioImpl implements UsuarioDao {
 	@Override
 	public void atualizar(Usuario  usuario) {
 		// TODO Auto-generated method stub
-            String sql = "update usuario set nome = ?, email = ? , senha1 = ? , senha2 = ? "
+            String sql = "update usuarios set nome = ?, email = ? , senha1 = ? , senha2 = ? "
                     + "where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
@@ -63,7 +63,7 @@ public class UsuarioImpl implements UsuarioDao {
 	@Override
 	public void remover(Usuario usuario) {
 		// TODO Auto-generated method stub
-            String sql = "delete from usuario where id = ?";
+            String sql = "delete from usuarios where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
                 stmt.setInt(1, usuario.getId());
@@ -78,7 +78,7 @@ public class UsuarioImpl implements UsuarioDao {
 	public List<Usuario> getListAll() {
 		List<Usuario> list = new ArrayList<Usuario>();
 		try {
-			String sql = "select id, nome, telefone from usuario";
+			String sql = "select id, nome, telefone from usuarios";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
@@ -99,7 +99,7 @@ public class UsuarioImpl implements UsuarioDao {
 
 	@Override
 	public Usuario findById(int id) {
-		String sql = "select id, nome, email, senha1 , senha2 from usuario where id = ?";
+		String sql = "select id, nome, email, senha1 , senha2 from usuarios where id = ?";
                 Usuario usuario = new Usuario();
                 try{
                     stmt = conn.prepareStatement(sql);
