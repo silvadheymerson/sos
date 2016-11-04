@@ -6,7 +6,7 @@
 
 <jsp:include page="layout_inicio.jsp" />
 <li class="active"><a href="index.jsp">Inicio</a></li>
-                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="servicos.jsp">Serviços</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
                     <li><a href="contact-us.html">Contatos</a></li>
@@ -122,7 +122,7 @@
 	        			<div class="service-wrapper">
 		        			<i class="icon-home"></i>
 		        			<h3>Atendimento Domiciliar</h3>
-		        			<p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+		        			<p>Já pensou em conseguir resolver seu problema sem sair de casa? Aqui realizamos seu pedido, nossos profissionais fazem esse atendimento. </p>
 		        			<a href="#" class="btn">Read more</a>
 		        		</div>
 	        		</div>
@@ -130,7 +130,7 @@
 	        			<div class="service-wrapper">
 		        			<i class="icon-briefcase"></i>
 		        			<h3>Serviços Especializado</h3>
-		        			<p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
+		        			<p>Profissionais capacitado e com experiência, voçê antes de contratar pode analisar o seu curriculum e as avaliações de seus clientes.</p>
 		        			<a href="#" class="btn">Read more</a>
 		        		</div>
 	        		</div>
@@ -138,7 +138,7 @@
 	        			<div class="service-wrapper">
 		        			<i class="icon-calendar"></i>
 		        			<h3>Agendamento de Serviço</h3>
-		        			<p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean vulputate aliquam risus rutrum scelerisque</p>
+		        			<p>Faça seu agendamento com o tecnico, ou especifique na hora de cadastrar o serviço que vc está precisando, e vamos solicitar os atendentes.</p>
 		        			<a href="#" class="btn">Read more</a>
 		        		</div>
 	        		</div>
