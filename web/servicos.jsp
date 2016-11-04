@@ -23,7 +23,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Our Portfolio</h1>
+						<h1>Serviços Disponiveis</h1>
 					</div>
 				</div>
 			</div>
@@ -54,9 +54,9 @@
 					<figure>
 						<img src="img/portfolio/4.jpg" alt="img04">
 						<figcaption>
-							<h3>Settings</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Beleza</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 	        	</div>	
@@ -64,9 +64,9 @@
 					<figure>
 						<img src="img/portfolio/1.jpg" alt="img01">
 						<figcaption>
-							<h3>Camera</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Informatica</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -74,9 +74,9 @@
 					<figure>
 						<img src="img/portfolio/2.jpg" alt="img02">
 						<figcaption>
-							<h3>Music</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Mecânico</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -84,9 +84,9 @@
 					<figure>
 						<img src="img/portfolio/5.jpg" alt="img05">
 						<figcaption>
-							<h3>Safari</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Fotografo</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -94,9 +94,9 @@
 					<figure>
 						<img src="img/portfolio/3.jpg" alt="img03">
 						<figcaption>
-							<h3>Phone</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Domestica</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -104,9 +104,9 @@
 					<figure>
 						<img src="img/portfolio/6.jpg" alt="img06">
 						<figcaption>
-							<h3>Game Center</h3>
-							<span>Jacob Cummings</span>
-							<a href="portfolio-item.html">Take a look</a>
+							<h3>Pedreiro</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -116,8 +116,8 @@
 				</div>
 				
 				<ul class="pager">
-				  <li><a href="#">Previous</a></li>
-				  <li><a href="#">Next</a></li>
+				  <li><a href="#">Voltar</a></li>
+				  <li><a href="#">Proximo</a></li>
 				</ul>
 				
 			</div>
