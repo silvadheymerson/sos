@@ -78,16 +78,34 @@
 	    <div class="section section-dark">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+                                        <div class="col-md-3">
 						<div class="calltoaction-wrapper">
-                                                    <h3>Buscar por serviços</h3> <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a> 
+                                                    <h3>Buscar por serviços</h3> 
                                                         
 						</div>
                                         </div>
-                                        <div class="col-md-6">
+					<div class="col-md-2">
+						<div class="calltoaction-wrapper">
+                                                   <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a> 
+                                                        
+						</div>
+                                        </div>
+                                        <div class="col-md-2">
+						<div class="calltoaction-wrapper">
+                                                    <h3>Ou</h3> 
+                                                        
+						</div>
+                                        </div>
+                                        <div class="col-md-3">
 						<div class="calltoaction-wrapper">
 							
-                                                        <h3>Anuciar seu serviços</h3> <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a>
+                                                        <h3>Anuncie seu serviço</h3> 
+						</div>
+					</div>
+                                        <div class="col-md-2">
+						<div class="calltoaction-wrapper">
+							
+                                                        <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a>
 						</div>
 					</div>
 				</div>
