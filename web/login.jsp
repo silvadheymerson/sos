@@ -6,7 +6,7 @@
 
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
-                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="servicos.jsp">Serviços</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
                     <li><a href="contact-us.html">Contatos</a></li>
