@@ -29,31 +29,31 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Login</div>
 				<div class="panel-body">
-					<form id="formExemplo" data-toggle="validator" role="form">
+                                    <form id="formExemplo" method="POST" action="cadastrarusuario" data-toggle="validator" role="form" >
 									  <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
-										<input id="textNome" class="form-control"  type="text">
+                                                                                <input id="textNome" name="nome" class="form-control"  type="text">
 									  </div>
 									  
 									  <div class="form-group">
 										<label for="inputEmail" class="control-label">Email</label>
-										<input id="inputEmail" class="form-control"  type="email">
+										<input id="inputEmail" name="email" class="form-control"  type="email">
 									  </div>
 									  
 									  <div class="form-group">
 										<label for="inputPassword" class="control-label">Senha</label>
-										<input type="password" class="form-control" id="inputPassword" >
+                                                                                <input type="password" name="senha1" class="form-control" id="inputPassword" >
 									  </div>
 									  
 									  <div class="form-group">
 										<label for="inputConfirm" class="control-label">Confirme a Senha</label>
-										<input type="password" class="form-control" id="inputConfirm">
+										<input type="password" name="senha2" class="form-control" id="inputConfirm">
 									  </div>
 									  
 									  
 									  
 									  <button type="submit" class="btn btn-primary">Confirmar</button>
-                                                                            <a class="btn btn-danger"href="login.php">Voltar</a>
+                                                                            <a class="btn btn-danger" href="login.jsp">Voltar</a>
 					</form>
 				</div>
 			</div>

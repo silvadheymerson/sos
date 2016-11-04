@@ -1,148 +1,141 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<%-- 
+    Document   : index
+    Created on : 03/11/2016, 11:11:37
+    Author     : SEE
+--%>
 
-<title>OfertAki- Sistema de Oferta e Serviços</title>
+<jsp:include page="layout_inicio.jsp" />
+<li class="active"><a href="index.jsp">Inicio</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="contact-us.html">Contatos</a></li>
+                    <li><a href="login.jsp">Fazer Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/datepicker3.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- GLOBAL STYLES -->
-        <!-- Carregar modelo do outro layout
-            <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
-        -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/theme.css" />
-    <link rel="stylesheet" href="assets/css/MoneAdmin.css" />
-    <link rel="stylesheet" href="assets/plugins/Font-Awesome/css/font-awesome.css" />
-    <!-- PAGE LEVEL STYLES -->
-    <link href="assets/css/layout2.css" rel="stylesheet" />
-    <link href="assets/plugins/flot/examples/examples.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/plugins/timeline/timeline.css" />
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(img/slides/1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    <center>  <h2 class="animation animated-item-1">Bem Vindo ao OfertAki</h2> </center>
+                                <center>    <p class="animation animated-item-2">Site para ofertas e buscas de serviços em geral.</p></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(img/slides/2.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                <center>   <h2 class="animation animated-item-1"> Avaliacão do Profissional </h2> </center>
+                               <center>   <p class="animation animated-item-2">Antes de contratar, voçê pode avaliar o curriculum do profissional e ver a nota de seus clientes.</p></center>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(img/slides/3.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">Varios serviços disponiveis</h2>
+                                    <p class="animation animated-item-2">Manutenção de Computadores, Mecânico , Diaristas , Moda e Beleza e Etc.  </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"></i>
+        </a>
+    </section><!--/#main-slider-->
 
-    <!--Icons-->
-    <!--<script src="assets/plugins/jquery-2.0.3.min.js"></script>-->
-    <script src="js/lumino.glyphs.js"></script>
-    
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
-
-</head>
-
-<body>
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><span>Oferta</span>Aki</a>
-				<ul class="user-menu">
-					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Usuario <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Pagina</a></li>
-							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Configurações</a></li>
-							<li><a href="login.jsp"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Sair</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+	
+		<!-- Call to Action Bar -->
+	    <div class="section section-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="calltoaction-wrapper">
+                                                    <h3>Buscar por serviços</h3> <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a> 
+                                                        
+						</div>
+                                        </div>
+                                        <div class="col-md-6">
+						<div class="calltoaction-wrapper">
 							
-		</div><!-- /.container-fluid -->
-	</nav>
-		
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<form role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Pesquisar Oferta">
+                                                        <h3>Anuciar seu serviços</h3> <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</form>
-		<ul class="nav menu">
-			<li class="active"><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Pagina Inicial</a></li>
-			
-                        <li><a href="index.php?pg=funcionarios"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"></use></svg> Profissionais</a></li>
-			
-			<li><a href="index.php?pg=cadastros"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Cadastrar Oferta</a></li>
-			<li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> MInhas Ofertas</a></li>
-			
-			<li class="parent ">
-				<a href="#">
-					<span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Ofertas Disponiveis 
-				</a>
-				<ul class="children collapse" id="sub-item-1">
-					<li>
-						<a class="" href="#">
-							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Informatica
-						</a>
-					</li>
-					<li>
-						<a class="" href="#">
-							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Engenharia Civil
-						</a>
-					</li>
-					<li>
-						<a class="" href="#">
-							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Domestico
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li role="presentation" class="divider"></li>
-			<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>Informações pessoais </a></li>
-		</ul>
+		</div>
+		<!-- End Call to Action Bar -->
 
-	</div><!--/.sidebar-->
-		
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-            
-            
-		
-        </div>	<!--/.main-->
-            <!-- GLOBAL SCRIPTS -->
-        
-        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-            <!-- PAGE LEVEL SCRIPTS -->
-        <script src="assets/plugins/flot/jquery.flot.js"></script>
-        <script src="assets/plugins/flot/jquery.flot.resize.js"></script>
-        <script src="assets/plugins/flot/jquery.flot.time.js"></script>
-        <script src="assets/plugins/flot/jquery.flot.stack.js"></script>
-        <script src="assets/js/for_index.js"></script>
+		<!-- Services -->
+        <div class="section section-white">
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<i class="icon-home"></i>
+		        			<h3>Atendimento Domiciliar</h3>
+		        			<p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+		        			<a href="#" class="btn">Read more</a>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<i class="icon-briefcase"></i>
+		        			<h3>Serviços Especializado</h3>
+		        			<p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
+		        			<a href="#" class="btn">Read more</a>
+		        		</div>
+	        		</div>
+	        		<div class="col-md-4 col-sm-6">
+	        			<div class="service-wrapper">
+		        			<i class="icon-calendar"></i>
+		        			<h3>Agendamento de Serviço</h3>
+		        			<p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean vulputate aliquam risus rutrum scelerisque</p>
+		        			<a href="#" class="btn">Read more</a>
+		        		</div>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	    <!-- End Services -->
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
-	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script>
-		$('#calendar').datepicker({
-		});
 
-		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
-		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
 
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>	
-</body>
 
-</html>
+
+
+
+
+
+
+<jsp:include page="layout_final.jsp" />
