@@ -31,10 +31,10 @@
 	        		<div class="col-sm-12" style="padding:0;">
 	        			<!-- Map -->
 	        			<div id="contact-us-map">
-							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7859.243040623254!2d-67.8532953!3d-9.9654136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c25f829050b%3A0x2e46e9d85145a309!2sUNINORTE+-+Uni%C3%A3o+Educacional+do+Norte!5e0!3m2!1spt-PT!2sbr!4v1478719663660"></iframe>
 							<br />
 							<small>
-								<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+								<a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7859.243040623254!2d-67.8532953!3d-9.9654136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c25f829050b%3A0x2e46e9d85145a309!2sUNINORTE+-+Uni%C3%A3o+Educacional+do+Norte!5e0!3m2!1spt-PT!2sbr!4v1478719663660"></a>
 							</small>
 							</iframe>
 	        			</div>
