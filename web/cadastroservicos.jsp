@@ -33,12 +33,13 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Preencha esse formulario</div>
 				<div class="panel-body">
-					<form id="formExemplo" data-toggle="validator" role="form">
+                                    <form id="formExemplo" method="POST" action="cadastrarServico" data-toggle="validator" role="form">
                                                                             <div class=" form-group">
                                                                                 <label for="textNome">Tipo de Serviço</label>
-                                                                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                                                                    <select id="selectbasic" name="servico" class="form-control">
 
                                                                                         <option value="">Escolha uma opção</option>
+                                                                                        <option value="1">Teste</option>
                                                                                         
 
                                                                                     </select>
@@ -46,20 +47,20 @@
                                                                             <div class="form-group">
                                                                                 
 										<label for="textNome" class="control-label">CEP</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://www.buscacep.correios.com.br" target="_blank">Não lembra seu CEP?</a>
-                                                                                <input id="textNome" class="form-control"  type="text" placeholder="00000-000">
+                                                                                <input id="textNome" name="cep" class="form-control"  type="text" placeholder="00000-000">
                                                                             </div>
                                                                             <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
-										<input id="textNome" class="form-control"  type="text">
+                                                                                <input id="textNome" name="nome" class="form-control"  type="text">
                                                                             </div>
 									  
                                                                             <div class="form-group">
 										<label for="inputEmail" class="control-label">Email</label>
-										<input id="inputEmail" class="form-control"  type="email">
+										<input id="inputEmail" name="email" class="form-control"  type="email">
                                                                             </div>
                                                                             <div class="form-group">
 										<label for="textTelefone" class="control-label">Telefone</label>
-                                                                                <input id="textTelefone" class="form-control"  type="text" placeholder="(00)0000-0000">
+                                                                                <input id="textTelefone"  name="telefone" class="form-control"  type="text" placeholder="(00)0000-0000">
                                                                             </div>
 									 
 									  
