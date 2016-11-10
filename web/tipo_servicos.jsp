@@ -42,7 +42,7 @@
 				<div class="panel-heading">Novo Serviço<h4><div style="float:right; font-size: 80%; position: relative; top:-15px" ></div> </h4></div>
                                 
 				<div class="panel-body">
-                                        <form role="form" method="POST" action="tipoServico">
+                                        <form role="form" action="tipoServico" method="POST">
 						<fieldset>
 							<div class="form-group">
 								<input class="form-control" name="nome" type="text">
