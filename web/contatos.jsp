@@ -52,7 +52,7 @@
 	        		<div class="col-sm-6">
 	        			<!-- Contact Info -->
 	        			<p class="contact-us-details">
-	        				<b>Address:</b> Rua Hungria, 200 - Jardim Europa  <br/>
+	        				<b>Endereço:</b> Rua Hungria, 200 - Jardim Europa  <br/>
 	        				<b>Telefone:</b> (68)3225-5585<br/>
 	        				<b>Celular</b> (68)99986-8971<br/>
 	        				<b>Email:</b> <a href="#">ofertaki@hotmail.com</a>

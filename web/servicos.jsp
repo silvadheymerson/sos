@@ -10,7 +10,7 @@
                     <li  class="active" ><a href="servicos.jsp">Serviços</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
-                    <li><a href="contact-us.html">Contatos</a></li>
+                    <li><a href="contatos.jsp">Contatos</a></li>
                     <li><a href="login.jsp">Fazer Login</a></li>
                 </ul>
             </div>

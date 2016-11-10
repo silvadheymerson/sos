@@ -105,7 +105,7 @@
                                         <div class="col-md-2">
 						<div class="calltoaction-wrapper">
 							
-                                                        <a href="servicos.jsp" class="btn btn-orange">Clique aqui</a>
+                                                        <a href="cadastroservicos.jsp" class="btn btn-orange">Clique aqui</a>
 						</div>
 					</div>
 				</div>
