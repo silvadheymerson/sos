@@ -68,7 +68,7 @@
 									  
 									  
 									  <button type="submit" class="btn btn-primary">Confirmar</button>
-                                                                            <a class="btn btn-danger"href="login.php">Voltar</a>
+                                                                            <a class="btn btn-danger"href="index.jsp">Voltar</a>
 					</form>
 				</div>
 			</div>
