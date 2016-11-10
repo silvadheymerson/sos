@@ -84,7 +84,7 @@ public class TipoServico extends HttpServlet {
          //salva 
         tipoDao.salvar(tipo);
         //retorna pra a tela de cadastro
-        response.sendRedirect("tiposervicos.jsp"); 
+        response.sendRedirect("tipo_servicos.jsp"); 
         
         
         
