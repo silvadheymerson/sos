@@ -1,10 +1,13 @@
-<%-- 
-    Document   : servicos
-    Created on : 03/11/2016, 17:07:18
-    Author     : SEE
---%>
+<%@page import="modelo.Tipo"%>
+<%@page import="java.util.List"%>
+<%@page import="controle.TipoImpl"%>
 
 
+<%
+                    TipoImpl tipoImpl = new TipoImpl ();
+                    List <Tipo> list = tipoImpl.getListAll();
+                    
+                    %>
 
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
@@ -39,6 +42,7 @@
 			</div>
                 </div><br><br><br>
                 
+                
             <div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default">
@@ -49,9 +53,10 @@
                                                                                 <label for="textNome">Tipo de Serviço</label>
                                                                                     <select id="selectbasic" name="servico" class="form-control">
 
-                                                                                        <option value="">Escolha uma opção</option>
-                                                                                        <option value="1">Teste</option>
+                                                                                       <%for (Tipo t : list){ %>
+                                                                                        <option value="<%=t.getId()%>"><%=t.getNome()%></option>
                                                                                         
+                                                                                        <% } %>
 
                                                                                     </select>
                                                                             </div>

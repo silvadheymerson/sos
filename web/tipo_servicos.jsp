@@ -67,7 +67,7 @@
     <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Hover Rows
+                            Servicos
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
