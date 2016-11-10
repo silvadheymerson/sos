@@ -1,8 +1,8 @@
-<%-- 
-    Document   : tipo_servicos
-    Created on : 10/11/2016, 16:00:16
-    Author     : SEE
---%>
+<%@page import="modelo.Tipo"%>
+<%@page import="java.util.List"%>
+<%@page import="controle.TipoImpl"%>
+
+
 
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
@@ -35,6 +35,13 @@
 				</div>
 			</div>
 		</div>
+                <%
+                    TipoImpl tipoImpl = new TipoImpl ();
+                    List <Tipo> list = tipoImpl.getListAll();
+                    
+                    %>
+                    
+    
     <div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default">
@@ -54,9 +61,43 @@
 				</div>
 			</div>
 		</div><!-- /.col-->
-</div><!-- /.row -->
-    
-    
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3"></div>    
+    <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Hover Rows
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tipo de Serviço</th>
+                                            <th></th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    <%for (Tipo t : list){ %>
+                                        <tr>
+                                            <td><%=t.getId()%></td>
+                                            <td><%=t.getNome()%></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                               <% }     %>    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+        <div class="col-lg-3"></div>    
+    </div>
     
     
     <jsp:include page="layout_final.jsp" />
