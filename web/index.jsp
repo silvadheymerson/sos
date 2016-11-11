@@ -14,7 +14,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
-                            <li><a href="#">Usuarios</a></li>
+                            <li><a href="listar_usuario.jsp">Usuarios</a></li>
                             <li><a href="#">Serviços Ofertados</a></li>
                             <li><a href="#">Emails</a></li>
                             <li><a href="#">Profissionais</a></li>

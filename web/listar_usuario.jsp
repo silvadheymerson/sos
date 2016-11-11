@@ -1,16 +1,16 @@
-<%@page import="modelo.Tipo"%>
+<%@page import="modelo.Usuario"%>
 <%@page import="java.util.List"%>
-<%@page import="controle.TipoImpl"%>
+<%@page import="controle.UsuarioImpl"%>
 
 
 
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
-                    <li  class="active" ><a href="servicos.jsp">Serviços</a></li>
+                    <li><a href="servicos.jsp">Serviços</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
                     <li><a href="contatos.jsp">Contatos</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown" class="active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
@@ -30,46 +30,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Tipos de Serviços</h1>
+						<h1>Listar de Usuarios</h1>
 					</div>
 				</div>
 			</div>
 		</div>
                 <%
-                    TipoImpl tipoImpl = new TipoImpl ();
-                    List <Tipo> list = tipoImpl.getListAll();
+                    UsuarioImpl usuarioImpl = new UsuarioImpl ();
+                    List <Usuario> list = usuarioImpl.getListAll();
                     
                     %>
                     
     
-    <div class="row">
-        <div class="col-lg-3"></div>
-		<div class="col-lg-6">
-			<div class="login-panel panel panel-default">
-                                
-				<div class="panel-heading">Novo Serviço<h4><div style="float:right; font-size: 80%; position: relative; top:-15px" ></div> </h4></div>
-                                
-				<div class="panel-body">
-                                        <form role="form" action="tipoServico" method="POST">
-						<fieldset>
-							<div class="form-group">
-								<input class="form-control" name="nome" type="text">
-							</div>
-							
-                                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div><!-- /.col-->
-                <div class="col-lg-3"></div>
-    </div><!-- /.row -->
+    
     <div class="row">
         <div class="col-lg-3"></div>    
     <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Servicos
+                            Usuarios
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -77,18 +56,18 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Tipo de Serviço</th>
-                                            <th></th>
+                                            <th>Nome</th>
+                                            <th>Email</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         
-                                    <%for (Tipo t : list){ %>
+                                    <%for (Usuario t : list){ %>
                                         <tr>
                                             <td><%=t.getId()%></td>
                                             <td><%=t.getNome()%></td>
-                                            <td></td>
+                                            <td><%=t.getEmail()%></td>
                                             <td></td>
                                         </tr>
                                <% }     %>    
