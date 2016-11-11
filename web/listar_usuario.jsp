@@ -68,7 +68,10 @@
                                             <td><%=t.getId()%></td>
                                             <td><%=t.getNome()%></td>
                                             <td><%=t.getEmail()%></td>
-                                            <td></td>
+                                            <td>
+                                            <a class="btn btn-warning btn-xs" href="alterarusuario?id=<%= t.getId()%>">Editar</a>
+                                            <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                            </td>
                                         </tr>
                                <% }     %>    
                                     </tbody>
