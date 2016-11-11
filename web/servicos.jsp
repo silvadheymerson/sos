@@ -120,6 +120,16 @@
 						</figcaption>
 					</figure>
 				</div>
+                                <div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/9.jpg" alt="img09">
+						<figcaption>
+							<h3>Outros serviços</h3>
+							<span>Escolha um profissional</span>
+							<a href="portfolio-item.html">Clique Aqui</a>
+						</figcaption>
+					</figure>
+				</div>
 			</ul>
 
 				
