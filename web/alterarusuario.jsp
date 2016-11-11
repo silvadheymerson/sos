@@ -52,7 +52,7 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Alterar Usuario</div>
 				<div class="panel-body">
-                                    <form id="formExemplo" method="POST" action="cadastrarUsuario.java?id=<%=usuario.getId()%>" data-toggle="validator" role="form" >
+                                    <form id="formExemplo" method="POST" action="cadastrarUsuario" data-toggle="validator" role="form" >
                                     
 									  <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
