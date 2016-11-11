@@ -38,13 +38,6 @@
 				</div>
 			</div>
                 </div><br><br><br>
-
-<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading">Alterar Usuario</div>
-				<div class="panel-body">
-                                    <form id="formExemplo" method="POST" action="cadastrarUsuario" data-toggle="validator" role="form" >
                                     <%
                                         int id = 0;
                                         Usuario usuario = new Usuario();
@@ -53,6 +46,14 @@
                                             usuario = new UsuarioImpl().findById(id);
                                         }
                                     %>
+
+<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">Alterar Usuario</div>
+				<div class="panel-body">
+                                    <form id="formExemplo" method="POST" action="cadastrarUsuario.java?id=<%=usuario.getId()%>" data-toggle="validator" role="form" >
+                                    
 									  <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
                                                                                 <input id="textNome" name="nome" class="form-control"  type="text" value="<%=usuario.getNome()%>">

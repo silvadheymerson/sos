@@ -74,7 +74,7 @@ public class CadastrarUsuario extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       Usuario usuario = new Usuario();//cria o objeto contato
+       Usuario usuario = new Usuario();//cria o objeto usuario
        
        int id=0;
         if(request.getParameter("id") != null)
@@ -85,7 +85,7 @@ public class CadastrarUsuario extends HttpServlet {
         usuario.setEmail(request.getParameter("email"));
         usuario.setSenha1(request.getParameter("senha1"));
         usuario.setSenha2(request.getParameter("senha2"));
-        UsuarioImpl usuarioDao = new UsuarioImpl();//cria o objeto contatoDao
+        UsuarioImpl usuarioDao = new UsuarioImpl();//cria o objeto usuarioDao
         
         
         if(id != 0){
