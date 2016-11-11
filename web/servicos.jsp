@@ -45,10 +45,9 @@
 	    	<div class="container">
 				<div class="row">
 				<div class="col-sm-12">
-						<h2>Serviços Disponiveis</h2>
 						<h3>Enconte os melhores profissionais aqui </h3>
 						<p>
-							 
+						Se esta procurando servirços de qualidade, aqui temos os melhores serviços para você ou sua empresa.  	 
 						</p>
 					
 					</div>
