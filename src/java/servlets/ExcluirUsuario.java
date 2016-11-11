@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Usuario;
-
+import dao.UsuarioDao;
 /**
  *
  * @author SEE
@@ -65,7 +65,7 @@ public class ExcluirUsuario extends HttpServlet {
             UsuarioImpl usuarioDao = new UsuarioImpl();//cria o objeto 
         
              //exclui
-            usuario.remover(usuario);
+            usuarioDao.remover(usuario);
             //retorna pra a tela da lista dos morista
                   
                          
