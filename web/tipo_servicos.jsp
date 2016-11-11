@@ -43,7 +43,8 @@
                     
     
     <div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <div class="col-lg-3"></div>
+		<div class="col-lg-6">
 			<div class="login-panel panel panel-default">
                                 
 				<div class="panel-heading">Novo Serviço<h4><div style="float:right; font-size: 80%; position: relative; top:-15px" ></div> </h4></div>
@@ -61,6 +62,7 @@
 				</div>
 			</div>
 		</div><!-- /.col-->
+                <div class="col-lg-3"></div>
     </div><!-- /.row -->
     <div class="row">
         <div class="col-lg-3"></div>    
