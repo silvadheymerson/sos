@@ -70,7 +70,7 @@
                                             <td><%=t.getEmail()%></td>
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="alterarusuario.jsp?id=<%= t.getId()%>">Editar</a>
-                                            <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                                            <a class="btn btn-danger btn-xs"  href="excluirUsuario?<%=t.getId()%>">Excluir</a>
                                             </td>
                                         </tr>
                                <% }     %>    

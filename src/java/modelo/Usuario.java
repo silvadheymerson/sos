@@ -50,4 +50,5 @@ public class Usuario{
     public void setSenha2(String senha2) {
         this.senha2 = senha2;
     }
+
 }
