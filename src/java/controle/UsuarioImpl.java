@@ -42,15 +42,14 @@ public class UsuarioImpl implements UsuarioDao {
 	@Override
 	public void atualizar(Usuario  usuario) {
 		// TODO Auto-generated method stub
-            String sql = "update usuarios set nome = ?, email = ? , senha1 = ? , senha2 = ? "
+            String sql = "update usuarios set nome = ?, email = ? "
                     + "where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
                 
                 stmt.setString(1, usuario.getNome());
                 stmt.setString(2, usuario.getEmail());
-                stmt.setString(3, usuario.getSenha1());
-                stmt.setString(4, usuario.getSenha2());
+                
                 stmt.setInt(3, usuario.getId());
                 
                 stmt.executeUpdate();

@@ -75,6 +75,10 @@ public class CadastrarUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        Usuario usuario = new Usuario();//cria o objeto contato
+       
+       int id=0;
+        if(request.getParameter("id") != null)
+            id = Integer.valueOf(request.getParameter("id"));
         
         //preenche o objeto contato
         usuario.setNome(request.getParameter("nome"));
@@ -83,10 +87,16 @@ public class CadastrarUsuario extends HttpServlet {
         usuario.setSenha2(request.getParameter("senha2"));
         UsuarioImpl usuarioDao = new UsuarioImpl();//cria o objeto contatoDao
         
-        //salva 
+        
+        if(id != 0){
+            usuario.setId(id);
+            usuarioDao.atualizar(usuario);
+            response.sendRedirect("listar_usuario.jsp");
+        }
+        else{
         usuarioDao.salvar(usuario);
         //retorna pra a tela de cadastro
-        response.sendRedirect("cadastrousuario.jsp"); 
+        response.sendRedirect("cadastrousuario.jsp");} 
         
         
         
