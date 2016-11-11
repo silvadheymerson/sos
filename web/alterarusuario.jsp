@@ -63,7 +63,7 @@
 										<label for="inputEmail" class="control-label">Email</label>
                                                                                 <input id="inputEmail" name="email" class="form-control"  type="email" value="<%=usuario.getEmail()%>">
 									  </div>
-                                        
+                                                                          <input type="hidden" name="id" value="<%=id%>"/>
 									  <button type="submit" class="btn btn-success">Confirmar</button>
                                                                             <a href="listar_usuario.jsp" class="btn btn-danger">Voltar</a> 
 					</form>
