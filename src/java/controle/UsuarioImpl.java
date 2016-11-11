@@ -78,7 +78,7 @@ public class UsuarioImpl implements UsuarioDao {
 	public List<Usuario> getListAll() {
 		List<Usuario> list = new ArrayList<Usuario>();
 		try {
-			String sql = "select id, nome, telefone from usuarios";
+			String sql = "select id, nome, email from usuarios";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
@@ -86,8 +86,7 @@ public class UsuarioImpl implements UsuarioDao {
 				usuario.setId(rs.getInt(1));
 				usuario.setNome(notNull(rs.getString(2)));
                                 usuario.setEmail(notNull(rs.getString(3)));
-                                usuario.setSenha1(notNull(rs.getString(4)));
-                                usuario.setSenha2(notNull(rs.getString(5)));
+                                
 				
 				list.add(usuario);
 			}
