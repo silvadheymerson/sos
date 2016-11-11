@@ -69,7 +69,7 @@ public class ExcluirUsuario extends HttpServlet {
             //retorna pra a tela da lista dos morista
                   
                          
-            response.sendRedirect("listarusuario.jsp");
+            response.sendRedirect("listar_usuario.jsp");
 
     }
 
