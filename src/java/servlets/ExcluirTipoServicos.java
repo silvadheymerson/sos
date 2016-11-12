@@ -5,7 +5,7 @@
  */
 package servlets;
 
-import controle.ServicoImpl;
+import controle.TipoImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -13,8 +13,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelo.Servico;
-import dao.ServicoDao;
+import modelo.Tipo;
+import dao.TipoDao;
 /**
  *
  * @author SEE
@@ -60,12 +60,12 @@ public class ExcluirTipoServicos extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            Servico  servico = new Servico();//cria o objeto 
-            servico.setId(Integer.valueOf(request.getParameter("id"))); 
-            ServicoImpl servicoDao = new ServicoImpl();//cria o objeto 
+            Tipo  tipo = new Tipo();//cria o objeto 
+            tipo.setNome(request.getParameter("nome")); 
+            TipoImpl tipoDao = new TipoImpl();//cria o objeto 
         
              //exclui
-            ServicoDao.remover(tipo);
+            tipoDao.remover(tipo);
             //retorna pra a tela da lista dos morista
                   
                          
@@ -95,6 +95,6 @@ public class ExcluirTipoServicos extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+        }// </editor-fold>
 
 }
