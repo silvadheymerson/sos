@@ -71,6 +71,19 @@
 	        			<!-- End Contact Info -->
 	        		</div>
 	        		<div class="col-sm-6">
+                                    
+                                    <form role="form" action="contatos" method="POST">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input id="inputEmail" type="email" class="form-control" placeholder="Digite seu Email">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Mensagem</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
 
 	        		</div>
 	        	</div>
