@@ -90,7 +90,7 @@
                                             <td><%=t.getNome()%></td>
                                             <td></td>
                                             <td>
-                                            <a class="btn btn-warning btn-xs" href="alterarusuario.jsp?id=<%= t.getId()%>">Editar</a>
+                                            <a class="btn btn-warning btn-xs" href="#">Editar</a>
                                             <a class="btn btn-danger btn-xs"  href="excluirTipoServicos?id=<%=t.getId()%>">Excluir</a>
                                             </td>
                                         </tr>

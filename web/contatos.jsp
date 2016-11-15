@@ -1,9 +1,3 @@
-<%-- 
-    Document   : contatos
-    Created on : 09/11/2016, 10:29:40
-    Author     : SEE
---%>
-
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
                     <li><a href="servicos.jsp">Serviços</a></li>
