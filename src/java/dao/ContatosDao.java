@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dao;
 
-/**
- *
- * @author Dhey
- */
+
+import java.util.List;
+
+import modelo.Contatos;
+
 public interface ContatosDao {
-    
+	
+	public void salvar(Contatos contatos);
+	public void atualizar(Contatos contatos);
+	public void remover(Contatos contatos);
+	public List<Contatos> getListAll();
+	public Contatos findById(int id);
+       
 }
