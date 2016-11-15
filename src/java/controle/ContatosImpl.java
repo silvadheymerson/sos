@@ -81,9 +81,9 @@ public class ContatosImpl implements ContatosDao {
 			rs = stmt.executeQuery();
 			while(rs.next()){
 				Contatos contatos = new Contatos();
-				contatos.setEmail(rs.getInt(1));
+				contatos.setEmail(rs.getString(1));
 				contatos.setTexto(notNull(rs.getString(2)));
-                                contatos.setId(notNull(rs.getString(3)));
+                                
                                 
 				
 				list.add(contatos);
@@ -103,10 +103,9 @@ public class ContatosImpl implements ContatosDao {
                     stmt.setInt(1, id);
                     rs = stmt.executeQuery();
                     rs.next();
-                    contatos.setEmail(rs.getInt(1));
+                    contatos.setEmail(rs.getString(1));
                     contatos.setTexto(notNull(rs.getString(2)));
-                    contatos.setId(notNull(rs.getString(3)));
-                   
+                                       
                 }catch (SQLException e) {
 			e.printStackTrace();
 		}
