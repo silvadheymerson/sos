@@ -61,7 +61,7 @@ public class ExcluirTipoServicos extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             Tipo  tipo = new Tipo();//cria o objeto 
-            tipo.setNome(request.getParameter("nome")); 
+            tipo.setId(Integer.valueOf(request.getParameter("id")));  
             TipoImpl tipoDao = new TipoImpl();//cria o objeto 
         
              //exclui
