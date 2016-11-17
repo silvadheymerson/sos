@@ -71,7 +71,7 @@
                                     <form role="form" action="cadastroContato" method="POST">
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input id="inputEmail" type="email" class="form-control" placeholder="Digite seu Email">
+                                            <input id="inputEmail" name="email" type="email" class="form-control" placeholder="Digite seu Email">
                                         </div>
                                         
                                         <div class="form-group">
