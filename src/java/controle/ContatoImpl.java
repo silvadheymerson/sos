@@ -22,7 +22,7 @@ public class ContatoImpl implements ContatoDao {
 	@Override
 	public void salvar(Contato contato) {
 		try {
-			String sql = "insert into contatos "
+			String sql = "insert into email "
                                 + "(email, texto) values(?,?";
 			
 			stmt = conn.prepareStatement(sql);
@@ -41,7 +41,7 @@ public class ContatoImpl implements ContatoDao {
 	@Override
 	public void atualizar(Contato  contato) {
 		// TODO Auto-generated method stub
-            String sql = "update contatos set email = ?, texto = ? "
+            String sql = "update email set email = ?, texto = ? "
                     + "where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
@@ -61,7 +61,7 @@ public class ContatoImpl implements ContatoDao {
 	@Override
 	public void remover(Contato contato) {
 		// TODO Auto-generated method stub
-            String sql = "delete from contatos where id = ?";
+            String sql = "delete from email where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
                 stmt.setInt(1, contato.getId());
@@ -76,7 +76,7 @@ public class ContatoImpl implements ContatoDao {
 	public List<Contato> getListAll() {
 		List<Contato> list = new ArrayList<Contato>();
 		try {
-			String sql = "select email, texto from contatos";
+			String sql = "select email, texto from email";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
@@ -96,7 +96,7 @@ public class ContatoImpl implements ContatoDao {
 
 	@Override
 	public Contato findById(int id) {
-		String sql = "select email, texto, id from contatos where id = ?";
+		String sql = "select email, texto, id from email where id = ?";
                 Contato contato = new Contato();
                 try{
                     stmt = conn.prepareStatement(sql);

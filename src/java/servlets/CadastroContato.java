@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Contato;
 
+
+
 /**
  *
  * @author SEE
@@ -82,8 +84,8 @@ public class CadastroContato extends HttpServlet {
         //preenche o objeto contato
         
         contato.setEmail(request.getParameter("email"));
-        usuario.setTexto(request.getParameter("texto"));
-        ContatoImpl usuarioDao = new ContatoImpl();//cria o objeto usuarioDao
+        contato.setTexto(request.getParameter("texto"));
+        ContatoImpl contatoDao = new ContatoImpl();//cria o objeto usuarioDao
         
         
         if(id != 0){
@@ -108,5 +110,7 @@ public class CadastroContato extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    
 
 }
