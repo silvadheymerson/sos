@@ -1,6 +1,6 @@
 package modelo;
 
-public class Contatos{
+public class Contato{
     
     private int id;
     private String email , texto;

@@ -1,8 +1,3 @@
-<%@page import="modelo.Contatos"%>
-<%@page import="java.util.List"%>
-<%@page import="controle.ContatosImpl"%>
-
-
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
                     <li><a href="servicos.jsp">Serviços</a></li>
@@ -36,11 +31,7 @@
 			</div>
                 </div>
     
-                <%
-                    ContatosImpl contatosImpl = new ContatosImpl ();
-                    List <Contatos> list = contatosImpl.getListAll();
-                    
-                    %>
+               
                  <div class="section section-map">
 
 

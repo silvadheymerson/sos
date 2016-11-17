@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package servlets;
-
+import controle.CImpl;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,13 +12,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.Contato;
 
 /**
  *
- * @author Dhey
+ * @author SEE
  */
-@WebServlet(name = "ServletAlterUser", urlPatterns = {"/ServletAlterUser"})
-public class ServletAlterUser extends HttpServlet {
+@WebServlet(name = "CadastroContato", urlPatterns = {"/cadastroContato"})
+public class CadastroContato extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +38,10 @@ public class ServletAlterUser extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletAlterUser</title>");            
+            out.println("<title>Servlet CadastroContato</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ServletAlterUser at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet CadastroContato at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -72,7 +73,30 @@ public class ServletAlterUser extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        Contato contato = new Contato();//cria o objeto usuario
+       
+       int id=0;
+        if(request.getParameter("id") != null)
+            id = Integer.valueOf(request.getParameter("id"));
+        
+        //preenche o objeto contato
+        
+        contato.setEmail(request.getParameter("email"));
+        usuario.setTexto(request.getParameter("texto"));
+        ContatoImpl usuarioDao = new ContatoImpl();//cria o objeto usuarioDao
+        
+        
+        if(id != 0){
+            contato.setId(id);
+            contatoDao.atualizar(contato);
+            response.sendRedirect("listar_usuario.jsp");
+        }
+        else{
+        contatoDao.salvar(contato);
+        //retorna pra a tela de cadastro
+        response.sendRedirect("contatos.jsp");
+        } 
+        
     }
 
     /**
