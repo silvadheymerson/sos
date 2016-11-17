@@ -85,13 +85,14 @@ public class CadastroContato extends HttpServlet {
         
         contato.setEmail(request.getParameter("email"));
         contato.setTexto(request.getParameter("texto"));
+        contato.setResposta(request.getParameter("resposta"));
         ContatoImpl contatoDao = new ContatoImpl();//cria o objeto usuarioDao
         
         
         if(id != 0){
             contato.setId(id);
             contatoDao.atualizar(contato);
-            response.sendRedirect("listar_usuario.jsp");
+            response.sendRedirect("listar_email.jsp");
         }
         else{
         contatoDao.salvar(contato);

@@ -3,7 +3,7 @@ package modelo;
 public class Contato{
     
     private int id;
-    private String email , texto;
+    private String email , texto , resposta;
 
      public int getId() {
         return id;
@@ -27,6 +27,14 @@ public class Contato{
 
     public void setTexto(String texto) {
         this.texto = texto;
+    }
+    
+    public String getResposta() {
+        return resposta;
+    }
+
+    public void setResposta(String resposta) {
+        this.resposta = resposta;
     }
     
    

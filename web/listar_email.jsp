@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Listar de Usuarios</h1>
+						<h1>Listar de E-mails</h1>
 					</div>
 				</div>
 			</div>
@@ -44,8 +44,8 @@
     
     
     <div class="row">
-        <div class="col-lg-2"></div>    
-    <div class="col-lg-8">
+        <div class="col-lg-1"></div>    
+    <div class="col-lg-10">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             E-mail Recentes
@@ -58,6 +58,7 @@
                                             <th>#</th>
                                             <th>Email</th>
                                             <th>Mensagem</th>
+                                            <th>Resposta</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
@@ -68,6 +69,7 @@
                                             <td><%=t.getId()%></td>
                                             <td><%=t.getEmail()%></td>
                                             <td><%=t.getTexto()%></td>
+                                             <td><%=t.getResposta()%></td>
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="resposta_email.jsp?id=<%= t.getId()%>">Responder</a>
                                            
@@ -80,7 +82,7 @@
                         </div>
                     </div>
     </div>
-        <div class="col-lg-2"></div>    
+        <div class="col-lg-1"></div>    
     </div>
     
     

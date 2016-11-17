@@ -41,15 +41,14 @@ public class ContatoImpl implements ContatoDao {
 	@Override
 	public void atualizar(Contato  contato) {
 		// TODO Auto-generated method stub
-            String sql = "update email set email = ?, texto = ? "
+            String sql = "update email set resposta = ? "
                     + "where id = ?";
             try {
                 stmt = conn.prepareStatement(sql);
                 
-                stmt.setString(1, contato.getEmail());
-                stmt.setString(2, contato.getTexto());
+                stmt.setString(1, contato.getResposta());
                 
-                stmt.setInt(3, contato.getId());
+                stmt.setInt(2, contato.getId());
                 
                 stmt.executeUpdate();
                 
@@ -76,7 +75,7 @@ public class ContatoImpl implements ContatoDao {
 	public List<Contato> getListAll() {
 		List<Contato> list = new ArrayList<Contato>();
 		try {
-			String sql = "select id ,email, texto from email";
+			String sql = "select id ,email, texto , resposta from email";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
@@ -84,6 +83,7 @@ public class ContatoImpl implements ContatoDao {
                                 contato.setId(rs.getInt(1));
 				contato.setEmail(rs.getString(2));
 				contato.setTexto(notNull(rs.getString(3)));
+                                contato.setResposta(notNull(rs.getString(4)));
                                 
                                 
 				
@@ -97,7 +97,7 @@ public class ContatoImpl implements ContatoDao {
 
 	@Override
 	public Contato findById(int id) {
-		String sql = "select email, texto, id from email where id = ?";
+		String sql = "select email, texto,resposta, id from email where id = ?";
                 Contato contato = new Contato();
                 try{
                     stmt = conn.prepareStatement(sql);
@@ -106,7 +106,9 @@ public class ContatoImpl implements ContatoDao {
                     rs.next();
                     contato.setEmail(rs.getString(1));
                     contato.setTexto(notNull(rs.getString(2)));
-                                       
+                    contato.setResposta(notNull(rs.getString(3)));
+
+                    
                 }catch (SQLException e) {
 			e.printStackTrace();
 		}

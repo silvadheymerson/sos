@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Resposder Email </h1>
+						<h1>Responder E-mail </h1>
 					</div>
 				</div>
 			</div>
@@ -48,28 +48,43 @@
                                     %>
 
 <div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+    <div class="col-md-1"></div>
+                <div class="col-sm-10">
+                    <!-- Aqui dentro dessa div vai as respostas do sistema -->
+                    <h2> Email recebido </h2>
+                    <hr>
+                    
+                    <br>
+                    Email: <%=contato.getEmail()%>
+                    <p></p>
+                    Assunto: <%=contato.getTexto()%><br>
+                    
+                    
+                    <hr>
+                   
+                </div>
+    <div class="col-md-1"></div> 
+</div>
+    <div class='row'>
+        <div class="col-md-1"></div> 
+		<div class='col-md-10'>
+                    
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Responder Email</div>
 				<div class="panel-body">
-                                    <form id="formExemplo" method="POST" action="cadastrarUsuario" data-toggle="validator" role="form" >
-                                    
-									  <div class="form-group">
-										<label for="textNome" class="control-label">Nome</label>
-                                                                                <input id="textNome" name="nome" class="form-control"  type="text" value="<%=contato.getEmail()%>">
-									  </div>
-									  
-									  <div class="form-group">
-										<label for="inputEmail" class="control-label">Email</label>
-                                                                                <input id="inputEmail" name="email" class="form-control"  type="email" value="<%=contato.getTexto()%>">
-									  </div>
-                                                                          <input type="hidden" name="id" value="<%=id%>"/>
-									  <button type="submit" class="btn btn-success">Confirmar</button>
-                                                                            <a href="listar_usuario.jsp" class="btn btn-danger">Voltar</a> 
-					</form>
+                                    <form role="form" action="cadastroContato" method="POST">
+                                        
+                                        <div class="form-group">
+                                            <label>Mensagem</label>
+                                            <textarea class="form-control" name="resposta" rows="3"></textarea>
+                                        </div>
+                                        <input type="hidden" name="id" value="<%=id%>"/>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
 				</div>
 			</div>
 		</div><!-- /.col-->
+          <div class="col-md-1"></div>       
 	</div><!-- /.row -->	
 
 
