@@ -44,11 +44,11 @@
     
     
     <div class="row">
-        <div class="col-lg-3"></div>    
-    <div class="col-lg-6">
+        <div class="col-lg-2"></div>    
+    <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Usuarios
+                            E-mail Recentes
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -69,8 +69,8 @@
                                             <td><%=t.getEmail()%></td>
                                             <td><%=t.getTexto()%></td>
                                             <td>
-                                            <a class="btn btn-warning btn-xs" href="alterarusuario.jsp?id=<%= t.getId()%>">Editar</a>
-                                            <a class="btn btn-danger btn-xs"  href="excluirUsuario?id=<%=t.getId()%>">Excluir</a>
+                                            <a class="btn btn-warning btn-xs" href="resposta_email.jsp?id=<%= t.getId()%>">Responder</a>
+                                           
                                             </td>
                                         </tr>
                                <% }     %>    
@@ -80,7 +80,7 @@
                         </div>
                     </div>
     </div>
-        <div class="col-lg-3"></div>    
+        <div class="col-lg-2"></div>    
     </div>
     
     

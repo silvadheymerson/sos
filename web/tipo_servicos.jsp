@@ -10,10 +10,10 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li> 
                     <li><a href="contatos.jsp">Contatos</a></li>
-                    <li class="dropdown"   class="active" >
+                    <li class="dropdown" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
+                            <li class="active"><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
                             <li><a href="listar_usuario.jsp">Usuarios</a></li>
                             <li><a href="#">Serviços Ofertados</a></li>
                             <li><a href="#">Emails</a></li>
