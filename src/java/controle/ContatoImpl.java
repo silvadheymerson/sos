@@ -23,7 +23,7 @@ public class ContatoImpl implements ContatoDao {
 	public void salvar(Contato contato) {
 		try {
 			String sql = "insert into email "
-                                + "(email, texto) values(?,?";
+                                + "(email, texto) values(?,?)";
 			
 			stmt = conn.prepareStatement(sql);
 			
