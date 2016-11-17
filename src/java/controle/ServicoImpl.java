@@ -82,17 +82,16 @@ public class ServicoImpl implements ServicoDao {
 	public List<Servico> getListAll() {
 		List<Servico> list = new ArrayList<Servico>();
 		try {
-			String sql = "select id, nome, telefone from usuarios";
+			String sql = "select s.id, s.nome, s.email, s.telefone , t.nome from servicos s ,tipos_servicos t where t.id = s.servico  ";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
 				Servico servico = new Servico();
 				servico.setId(rs.getInt(1));
-                                servico.setServico(notNull(rs.getString(2)));
-                                servico.setCep(notNull(rs.getString(3)));
-				servico.setNome(notNull(rs.getString(4)));
-                                servico.setEmail(notNull(rs.getString(5)));
-                                servico.setTelefone(notNull(rs.getString(6)));
+                                servico.setNome(notNull(rs.getString(2)));
+                                servico.setEmail(notNull(rs.getString(3)));
+                                servico.setTelefone(notNull(rs.getString(4)));
+                                servico.setServico(notNull(rs.getString(5)));
                                 
 				
 				list.add(servico);

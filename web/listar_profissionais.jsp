@@ -64,6 +64,7 @@
                                             <th>Email</th>
                                             <th>Telefone</th>
                                             <th>Tpo de Profissional</th>
+                                            <th>Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
