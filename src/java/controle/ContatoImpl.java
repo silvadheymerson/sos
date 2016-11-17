@@ -76,13 +76,14 @@ public class ContatoImpl implements ContatoDao {
 	public List<Contato> getListAll() {
 		List<Contato> list = new ArrayList<Contato>();
 		try {
-			String sql = "select email, texto from email";
+			String sql = "select id ,email, texto from email";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
 				Contato contato = new Contato();
-				contato.setEmail(rs.getString(1));
-				contato.setTexto(notNull(rs.getString(2)));
+                                contato.setId(rs.getInt(1));
+				contato.setEmail(rs.getString(2));
+				contato.setTexto(notNull(rs.getString(3)));
                                 
                                 
 				
