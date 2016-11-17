@@ -19,7 +19,7 @@
                             <li><a href="listar_usuario.jsp">Usuarios</a></li>
                             <li><a href="#">Serviços Ofertados</a></li>
                             <li class="active"><a href="listar_email.jsp">Emails</a></li>
-                            <li><a href="listar_profissional.jsp">Profissionais</a></li>
+                            <li><a href="listar_profissionais.jsp">Profissionais</a></li>
                             
                         </ul>
                     </li>
