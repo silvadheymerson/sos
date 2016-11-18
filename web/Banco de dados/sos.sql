@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Nov-2016 às 16:22
+-- Generation Time: 18-Nov-2016 às 00:31
 -- Versão do servidor: 5.7.16-log
 -- PHP Version: 5.6.15
 
@@ -61,6 +61,29 @@ CREATE TABLE IF NOT EXISTS `cidades` (
   `c_nome` varchar(45) NOT NULL,
   PRIMARY KEY (`c_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `email`
+--
+
+DROP TABLE IF EXISTS `email`;
+CREATE TABLE IF NOT EXISTS `email` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(60) DEFAULT NULL,
+  `texto` varchar(150) DEFAULT NULL,
+  `resposta` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `email`
+--
+
+INSERT INTO `email` (`id`, `email`, `texto`, `resposta`) VALUES
+(45, 'fabricio_rbfc@hotmail.com', 'não consigo cadastrar um serviço', NULL),
+(46, 'dheymerson.silva@hotmail.com', 'faz urro', 'faço não');
 
 -- --------------------------------------------------------
 
@@ -154,14 +177,15 @@ CREATE TABLE IF NOT EXISTS `servicos` (
   `telefone` varchar(45) DEFAULT NULL,
   `cep` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `servicos`
 --
 
 INSERT INTO `servicos` (`id`, `servico`, `email`, `nome`, `telefone`, `cep`) VALUES
-(1, 1, 'fabricio_rbfc@hotmail.com', 'fabricio andre de aquino brito', '(68)99993-5863', '25225-858');
+(1, 1, 'fabricio_rbfc@hotmail.com', 'fabricio andre de aquino brito', '(68)99993-5863', '25225-858'),
+(2, 6, 'dheymerson.silva@hotmail.com', 'Dheymerson Siva', '(68)999993-5863', '25486-865');
 
 -- --------------------------------------------------------
 
@@ -174,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `tipos_servicos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `tipos_servicos`
@@ -186,7 +210,8 @@ INSERT INTO `tipos_servicos` (`id`, `nome`) VALUES
 (4, 'Carpinteiro'),
 (5, 'Motorista'),
 (6, 'Pedreiro'),
-(7, 'Domestica');
+(7, 'Domestica'),
+(8, 'teste');
 
 -- --------------------------------------------------------
 
@@ -198,11 +223,12 @@ DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(60) DEFAULT NULL,
-  `u_cpf` varchar(15) DEFAULT NULL,
-  `u_data_nascimento` date DEFAULT NULL,
+  `cpf` varchar(15) DEFAULT NULL,
+  `data_nascimento` date DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
   `senha1` varchar(45) DEFAULT NULL,
   `senha2` varchar(45) DEFAULT NULL,
+  `telefone` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
@@ -210,11 +236,10 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `u_cpf`, `u_data_nascimento`, `email`, `senha1`, `senha2`) VALUES
-(1, 'Fabricio Andre', NULL, NULL, 'fabricio_rbfc@hotmail.com', '123', '123'),
-(2, 'Dheymerson Siva', NULL, NULL, 'dheymerson.silva@hotmail.com', '123', '123'),
-(3, 'Rogerio Ceni', NULL, NULL, 'rogerio.ceni01@hotmail.com', NULL, NULL),
-(4, 'Steven Gerrard', NULL, NULL, 'steven_gerrard@uol.com', NULL, NULL);
+INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `data_nascimento`, `email`, `senha1`, `senha2`, `telefone`) VALUES
+(1, 'Fabricio Andre', NULL, NULL, 'fabricio_rbfc@hotmail.com', '123', '123', NULL),
+(2, 'Dheymerson Siva', NULL, NULL, 'dheymerson.silva@hotmail.com', '123', '123', NULL),
+(4, 'Steven Gerrard', NULL, NULL, 'steven_gerrard@uol.com', NULL, NULL, NULL);
 
 --
 -- Constraints for dumped tables
