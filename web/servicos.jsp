@@ -8,7 +8,10 @@
 <jsp:include page="layout_inicio.jsp" />
 <li ><a href="index.jsp">Inicio</a></li>
                     <li  class="active" ><a href="servicos.jsp">Serviços</a></li>
-                    <li class="dropdown"  class="active" >
+                    
+                    <li><a href="sobre.jsp">Sobre</a></li> 
+                    <li><a href="contatos.jsp">Contatos</a></li>
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="listar_usuario.jsp">Editar Perfil</a></li>
@@ -18,8 +21,6 @@
                             
                         </ul>
                     </li>
-                    <li><a href="sobre.jsp">Sobre</a></li> 
-                    <li><a href="contatos.jsp">Contatos</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
