@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Nov-2016 às 00:37
+-- Generation Time: 18-Nov-2016 às 00:55
 -- Versão do servidor: 5.7.16-log
 -- PHP Version: 5.6.15
 
@@ -23,21 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `bairros`
---
-
-DROP TABLE IF EXISTS `bairros`;
-CREATE TABLE IF NOT EXISTS `bairros` (
-  `b_id` int(11) NOT NULL AUTO_INCREMENT,
-  `b_nome` varchar(45) NOT NULL,
-  `b_cidade` int(11) NOT NULL,
-  PRIMARY KEY (`b_id`),
-  KEY `fk_bairros_cidades_idx` (`b_cidade`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `candidato_oferta`
 --
 
@@ -47,19 +32,6 @@ CREATE TABLE IF NOT EXISTS `candidato_oferta` (
   `co_status` int(11) NOT NULL,
   `co_data_cadastro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`co_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `cidades`
---
-
-DROP TABLE IF EXISTS `cidades`;
-CREATE TABLE IF NOT EXISTS `cidades` (
-  `c_id` int(11) NOT NULL AUTO_INCREMENT,
-  `c_nome` varchar(45) NOT NULL,
-  PRIMARY KEY (`c_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -84,54 +56,6 @@ CREATE TABLE IF NOT EXISTS `email` (
 INSERT INTO `email` (`id`, `email`, `texto`, `resposta`) VALUES
 (45, 'fabricio_rbfc@hotmail.com', 'não consigo cadastrar um serviço', NULL),
 (46, 'dheymerson.silva@hotmail.com', 'faz urro', 'faço não');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `enderecos`
---
-
-DROP TABLE IF EXISTS `enderecos`;
-CREATE TABLE IF NOT EXISTS `enderecos` (
-  `e_id` int(11) NOT NULL AUTO_INCREMENT,
-  `e_rua` varchar(20) NOT NULL,
-  `e_numero` int(11) NOT NULL,
-  `e_complemento` varchar(100) NOT NULL,
-  `e_bairro` int(11) NOT NULL,
-  `e_cidade` int(11) NOT NULL,
-  `e_cep` varchar(15) NOT NULL,
-  PRIMARY KEY (`e_id`),
-  KEY `fk_enderecos_bairros1_idx` (`e_bairro`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `login`
---
-
-DROP TABLE IF EXISTS `login`;
-CREATE TABLE IF NOT EXISTS `login` (
-  `l_id` int(11) NOT NULL,
-  `l_user` varchar(60) NOT NULL,
-  `l_pass` varchar(60) NOT NULL,
-  PRIMARY KEY (`l_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `niveis`
---
-
-DROP TABLE IF EXISTS `niveis`;
-CREATE TABLE IF NOT EXISTS `niveis` (
-  `n_id` int(11) NOT NULL AUTO_INCREMENT,
-  `n_nivel` int(11) NOT NULL,
-  `n_user` int(11) NOT NULL,
-  PRIMARY KEY (`n_id`),
-  KEY `fk_niveis_login1_idx` (`n_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -240,28 +164,6 @@ INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `data_nascimento`, `email`, `senha1
 (1, 'Fabricio Andre', NULL, NULL, 'fabricio_rbfc@hotmail.com', '123', '123', NULL),
 (2, 'Dheymerson Siva', NULL, NULL, 'dheymerson.silva@hotmail.com', '123', '123', NULL),
 (4, 'Steven Gerrard', NULL, NULL, 'steven_gerrard@uol.com', NULL, NULL, NULL);
-
---
--- Constraints for dumped tables
---
-
---
--- Limitadores para a tabela `bairros`
---
-ALTER TABLE `bairros`
-  ADD CONSTRAINT `fk_bairros_cidades` FOREIGN KEY (`b_cidade`) REFERENCES `cidades` (`c_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `enderecos`
---
-ALTER TABLE `enderecos`
-  ADD CONSTRAINT `fk_enderecos_bairros1` FOREIGN KEY (`e_bairro`) REFERENCES `bairros` (`b_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `niveis`
---
-ALTER TABLE `niveis`
-  ADD CONSTRAINT `fk_niveis_login1` FOREIGN KEY (`n_user`) REFERENCES `login` (`l_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
