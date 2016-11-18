@@ -2,7 +2,7 @@
 <li ><a href="index.jsp">Inicio</a></li>
                     <li><a href="servicos.jsp">Serviços</a></li>
                     
-                    <li><a href="contatos.jsp">Contatos</a></li>  
+                    <li><a href="sobre.jsp">Sobre</a></li>  
                     <li  class="active" ><a href="contatos.jsp">Contatos</a></li> 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil<i class="icon-angle-down"></i></a>
