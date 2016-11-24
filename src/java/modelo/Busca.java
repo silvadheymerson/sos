@@ -8,7 +8,7 @@ package modelo;
 public class Busca{
     
     private int id;
-    private String servico, cep , nome , email , telefone , prazo , descricao;
+    private String servico, cep , nome , email , telefone , prazo , descricao ;
     
      public int getId() {
         return id;

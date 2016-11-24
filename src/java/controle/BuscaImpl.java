@@ -111,7 +111,7 @@ public class BuscaImpl implements BuscaDao {
 
 	@Override
 	public Busca findById(int id) {
-		String sql = "select id, nome, email, telefone , prazo , servico from ofertas where id = ?";
+		String sql = "select id, nome, email, telefone , prazo , servico , descricao from ofertas where id = ?";
                 Busca busca = new Busca();
                 try{
                     stmt = conn.prepareStatement(sql);
@@ -124,6 +124,7 @@ public class BuscaImpl implements BuscaDao {
                     busca.setTelefone(notNull(rs.getString(4)));
                     busca.setPrazo(notNull(rs.getString(5)));
                     busca.setServico(notNull(rs.getString(6)));
+                    busca.setDescricao(notNull(rs.getString(6)));
                     
                     
                     
