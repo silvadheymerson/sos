@@ -107,6 +107,7 @@ public class ContatoImpl implements ContatoDao {
                     contato.setEmail(rs.getString(1));
                     contato.setTexto(notNull(rs.getString(2)));
                     contato.setResposta(notNull(rs.getString(3)));
+                    contato.setId(rs.getInt(4));
 
                     
                 }catch (SQLException e) {
