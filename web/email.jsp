@@ -40,7 +40,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Listar de E-mails</h1>
+						<h1>Meus Emails</h1>
 					</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
                                             <td><%=t.getTexto()%></td>
                                              <td><%=t.getResposta()%></td>
                                             <td>
-                                            <a class="btn btn-warning btn-xs" href="visualizaremail.jsp?id=<%= t.getId()%>">Responder</a>
+                                            <a class="btn btn-warning btn-xs" href="visualizaremail.jsp?id=<%= t.getId()%>">Visualizar</a>
                                            
                                             </td>
                                         </tr>
