@@ -14,7 +14,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="listar_usuario.jsp">Editar Perfil</a></li>
-                            <li><a href="meus_servicos">Meus Serviços</a></li>
+                            <li><a href="meus_servicos.jsp">Meus Serviços</a></li>
                             <li><a href="email.jsp">Emails</a></li>
                            <li><a href="trocar_senha.jsp">Trocar Senha</a></li>
                             

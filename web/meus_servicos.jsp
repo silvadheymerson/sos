@@ -20,7 +20,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="listar_usuario.jsp">Editar Perfil</a></li>
-                            <li  class="active" ><a href="meus_servicos">Meus Serviços</a></li>
+                            <li  class="active" ><a href="meus_servicos.jsp">Meus Serviços</a></li>
                             <li><a href="email.jsp">Emails</a></li>
                            <li><a href="trocar_senha.jsp">Trocar Senha</a></li>
                             
@@ -72,12 +72,11 @@
                                     <thead>
                                         <tr>
                                             <th>N° Protocolo</th>
-                                            <th>Nome</th>
-                                            <th>Email</th>
-                                            <th>Telefone</th>
+                                            
                                             <th>Tpo de Serviço</th>
                                             
                                             <th>Descricao</th>
+                                            <th>Data do Pedido</th>
                                             
                                             <th>Ações</th>
                                         </tr>
@@ -87,11 +86,10 @@
                                     <%for (Busca t : list){ %>
                                         <tr>
                                             <td><%=t.getId()%></td>
-                                            <td><%=t.getNome()%></td>
-                                            <td><%=t.getEmail()%></td>
-                                            <td><%=t.getTelefone()%></td>
+                                            
                                             <td><%=t.getServico()%></td>
                                             <td><%=t.getDescricao()%></td>
+                                            <td><%=t.getData()%></td>
                                             
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="#">Visualizar</a>
