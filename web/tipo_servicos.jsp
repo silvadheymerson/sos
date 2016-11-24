@@ -25,8 +25,8 @@
                         <ul class="dropdown-menu">
                             <li class="active"><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
                             <li><a href="listar_usuario.jsp">Usuarios</a></li>
-                            <li><a href="#">Serviços Ofertados</a></li>
-                            <li><a href="#">Emails</a></li>
+                            <li><a href="servico_ofertado.jsp">Serviços Ofertados</a></li>
+                            <li><a href="listar_email.jsp">Emails</a></li>
                             <li><a href="listar_profissionais.jsp">Profissionais</a></li>
                             
                         </ul>
