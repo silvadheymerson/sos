@@ -71,7 +71,7 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>N° Protocolo</th>
+                                            <th>N°</th>
                                             <th>Nome</th>
                                             <th>Email</th>
                                             <th>Telefone</th>
