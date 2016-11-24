@@ -57,7 +57,7 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Preencha esse formulario</div>
 				<div class="panel-body">
-                                    <form id="formExemplo" method="POST" action="cadastrarServico" data-toggle="validator" role="form">
+                                    <form id="formExemplo" method="POST" action="cadastrarBusca" data-toggle="validator" role="form">
                                                                             <div class=" form-group">
                                                                                 <label for="textNome">Tipo de Serviço que vc está precisando</label>
                                                                                     <select id="selectbasic" name="servico" class="form-control">
@@ -89,7 +89,7 @@
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label for="textNome">Prazo de atendimento</label>
-                                                                                <select id="selectbasic" name="servico" class="form-control">
+                                                                                <select id="selectbasic" name="prazo" class="form-control">
                                                                                     <option value="">Selecione uma opção</option>
                                                                                     <option value="O quanto antes possivel">O quanto antes possivel</option>
                                                                                     <option value="Nos proximos 30 dias">Nos proximos 30 dias</option>
@@ -100,13 +100,10 @@
                                                                                 </select>
                                                                                 
                                                                             </div> 
-                                                                            <div class="form-group">
-										<label for="textTelefone" class="control-label">Prazo para atendimento</label>
-                                                                                <input id="textTelefone"  name="telefone" class="form-control"  type="text" placeholder="(00)0000-0000">
-                                                                            </div>
+                                                                            
                                                                             <div class="form-group">
                                                                                 <label>Descrição do que você precisa</label>
-                                                                                <textarea class="form-control" name="texto" rows="3"></textarea>
+                                                                                <textarea class="form-control" name="descricao" rows="3"></textarea>
                                                                             </div>            
                                                                                         
 									 
