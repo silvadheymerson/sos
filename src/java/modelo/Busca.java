@@ -8,7 +8,7 @@ package modelo;
 public class Busca{
     
     private int id;
-    private String servico, cep , nome , email , telefone , prazo , descricao ;
+    private String servico, cep , nome , email , telefone , prazo , descricao , data ;
     
      public int getId() {
         return id;
@@ -77,6 +77,14 @@ public class Busca{
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    } 
+    
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     } 
     
 }

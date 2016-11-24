@@ -15,12 +15,12 @@
                     <li><a href="servicos.jsp">Serviços</a></li>
                     
                     <li><a href="sobre.jsp">Sobre</a></li>  
-                    <li  class="active" ><a href="contatos.jsp">Contatos</a></li> 
+                    <li ><a href="contatos.jsp">Contatos</a></li> 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="listar_usuario.jsp">Editar Perfil</a></li>
-                            <li><a href="meus_servicos">Meus Serviços</a></li>
+                            <li  class="active" ><a href="meus_servicos">Meus Serviços</a></li>
                             <li><a href="email.jsp">Emails</a></li>
                            <li><a href="trocar_senha.jsp">Trocar Senha</a></li>
                             
@@ -47,7 +47,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-                                            <h1>Listagem de Serviços procurados pelos úsuarios</h1>
+                                            <h1>Minhas Buscas de Serviços</h1>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
     <div class="col-lg-10">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Serviços
+                            Lista
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -76,7 +76,7 @@
                                             <th>Email</th>
                                             <th>Telefone</th>
                                             <th>Tpo de Serviço</th>
-                                            <th>Data</th>
+                                            
                                             <th>Descricao</th>
                                             
                                             <th>Ações</th>
@@ -91,7 +91,6 @@
                                             <td><%=t.getEmail()%></td>
                                             <td><%=t.getTelefone()%></td>
                                             <td><%=t.getServico()%></td>
-                                            <td><%=t.getData()%></td>
                                             <td><%=t.getDescricao()%></td>
                                             
                                             <td>
