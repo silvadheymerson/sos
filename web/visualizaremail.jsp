@@ -59,38 +59,45 @@
 
 
 
+<div class="row">
+        <div class="col-lg-1"></div>    
+    <div class="col-lg-10">
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+
+                            <colgroup>
+                                  <col class="span1">
+                                  <col class="span7">
+                            </colgroup>
+
+                            <tbody>
+                                  <tr>
+                                    <td>Protocolo</td>
+                                    <td><%=contato.getId()%></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Seu Email</td>
+                                    <td><%=contato.getTexto()%></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Resposta</td>
+                                    <td><%=contato.getResposta()%></td>
+                                  </tr>
+
+                            </tbody>
 
 
-<table class="table table-bordered">
-
-            <colgroup>
-                  <col class="span1">
-                  <col class="span7">
-            </colgroup>
-
-            <tbody>
-                  <tr>
-                    <td>Protocolo</td>
-                    <td><%=contato.getId()%></td>
-                  </tr>
-
-                  <tr>
-                    <td>Seu Email</td>
-                    <td><%=contato.getTexto()%></td>
-                  </tr>
-
-                  <tr>
-                    <td>Resposta</td>
-                    <td><%=contato.getResposta()%></td>
-                  </tr>
-                  
-            </tbody>
 
 
-
-
-</table>
-                    
+                </table>
+            </div>
+        </div>
+    </div>
+                                  <div class="col-lg-1"></div>
+</div>                    
                     
                     
                        <jsp:include page="layout_final.jsp" />
