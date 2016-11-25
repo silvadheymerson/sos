@@ -86,7 +86,7 @@ public class BuscaImpl implements BuscaDao {
 	public List<Busca> getListAll() {
 		List<Busca> list = new ArrayList<Busca>();
 		try {
-			String sql = "select o.id, o.nome, o.email, o.telefone , o.prazo , t.nome , o.descricao , o.data from ofertas o ,tipos_servicos t where t.id = o.servico  ";
+			String sql = "select o.id, o.nome, o.email, o.telefone , o.prazo , t.nome , o.descricao , o.data from ofertas o ,tipos_servicos t where t.id = o.servico order by o.id  ";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
