@@ -1,0 +1,19 @@
+QUEM SOMOS
+
+Historia
+Criado em 2016, o OFERTAKI - é um SERVIÇO DE UTILIDADE PÚBLICA e atua como um classificado online de vagas de emprego, 
+em todo o Brasil. Desenvolvido pelos alunos - Dheymerson Silva e Fabricio André, para a conclusão da disciplina de Java
+ Web, o Ofertaki é um site confiável que busca contribuir socialmente com o mercado de trabalho, promovendo o contato 
+direto entre empregador e trabalhador.
+
+
+Missão
+Queremos ser o ambiente onde todos possam encontram um trabalho ou oferta um serviço, encontram informação, oferecendo
+ os melhores trabalhos e serviços, alinhado ao melhor atendimento acompanhando as melhores práticas essenciais para uma
+ sociedade.
+
+
+Visão
+Tornar o Ofertaki em uma referência em ofertas de serviços aos nossos clientes e amigos e tornar-se o melhor site em 
+oferta de serviços do pais em até 2 (dois) anos, prestando serviços para a melhor satisfação do trabalhado quanto a 
+do empregador também proporcionando um ambiente com vários recursos.
