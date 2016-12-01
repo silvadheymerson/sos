@@ -69,9 +69,7 @@
         <div class="col-lg-1"></div>    
     <div class="col-lg-10">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Listar de profissionais 
-                        </div>
+                        
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">

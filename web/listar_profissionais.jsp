@@ -32,14 +32,14 @@
                             
                         </ul>
                     </li>
-                    <li class="dropdown" class="active">
+                    <li class="dropdown" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="tipo_servicos.jsp">Tipo de Serviço</a></li>
                             <li><a href="listar_usuario.jsp">Usuarios</a></li>
                             <li><a href="servico_ofertado.jsp">Serviços Ofertados</a></li>
                             <li><a href="listar_email.jsp">Emails</a></li>
-                            <li><a href="listar_profissionais.jsp">Profissionais</a></li>
+                            <li class="active"><a href="listar_profissionais.jsp">Profissionais</a></li>
                             
                         </ul>
                     </li>
@@ -52,7 +52,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Listar de Proffisionais</h1>
+						<h1> Nossos Profissionais</h1>
 					</div>
 				</div>
 			</div>
@@ -66,12 +66,10 @@
     
     
     <div class="row">
-        <div class="col-lg-1"></div>    
-    <div class="col-lg-10">
+
+    <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            E-mail Recentes
-                        </div>
+                        
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
@@ -106,7 +104,7 @@
                         </div>
                     </div>
     </div>
-        <div class="col-lg-1"></div>    
+            
     </div>
     
     
