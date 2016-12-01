@@ -15,7 +15,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Procurar<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="profissionais.jsp">Profissionais</a></li>
-                            <li><a href="listar_servicos.jsp">Meus Serviços</a></li>
+                            <li><a href="listar_servicos.jsp">Serviços</a></li>
                              
                         </ul>
                     </li>
@@ -95,7 +95,7 @@
                                             <td><%=t.getTelefone()%></td>
                                             <td><%=t.getServico()%></td>
                                             <td>
-                                            <a class="btn btn-warning btn-xs" href="#">Visualizar</a>
+                                            <a class="btn btn-warning btn-xs" href="#">Contratar</a>
                                            
                                             </td>
                                         </tr>

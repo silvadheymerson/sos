@@ -79,9 +79,29 @@
                                                                                     </select>
                                                                             </div>
                                                                             <div class="form-group">
-                                                                                
-										<label for="textNome" class="control-label">CEP</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://www.buscacep.correios.com.br" target="_blank">Não lembra seu CEP?</a>
-                                                                                <input id="textNome" name="cep" class="form-control"  type="text" placeholder="00000-000">
+                                                                            <label>CEP</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://www.buscacep.correios.com.br" target="_blank">Não lembra seu CEP?</a>
+                                                                            <input name="cep" type="text" value="" class="form-control" id="cep" onblur="pesquisacep(this.value);">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <label>Rua</label>
+                                                                            <input name="rua"  type="text" value="" id="rua" class="form-control" disabled="disabled">
+                                                                          </div>
+                                                                          <div class="form-group">
+                                                                            <label>Numero</label>
+                                                                            <input name="numero"  type="text" value="" id="numero" class="form-control" >
+                                                                          </div>  
+                                                                          <div class="form-group ">
+                                                                            <label>Bairro</label>
+                                                                            <input name="bairro" type="text" id="bairro" value="" class="form-control" disabled="disabled">
+                                                                          </div>
+                                                                            <div class=" form-group">
+                                                                                <label>Cidade</label>
+                                                                                <input name="cidade" type="text" id="cidade" value="" class="form-control" disabled="disabled" >
+                                                                            </div>
+
+                                                                            <div class=" form-group">
+                                                                                <label for="exampleInputEmail1">Estado</label>
+                                                                                <input name="uf" type="text" id="uf" class="form-control"  value="" disabled="disabled">
                                                                             </div>
                                                                             <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
