@@ -55,7 +55,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-                                            <h1>Listagem de Serviços procurados pelos úsuarios</h1>
+                                            <h1>Serviços procurados pelos úsuarios</h1>
 					</div>
 				</div>
 			</div>
@@ -71,9 +71,7 @@
          
     <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Serviços
-                        </div>
+                        
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
@@ -103,19 +101,92 @@
                                             <td><%=t.getDescricao()%></td>
                                             
                                             <td>
-                                            <a class="btn btn-warning btn-xs" href="#">Visualizar</a>
+                                            <a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#setores<%=t.getId()%>">Visualizar</a>
                                            
                                             </td>
                                         </tr>
+                                        
+                                        <!--MODAL -->
+                                        <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal fade" id="setores<%=t.getId()%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="H2">INFORMAÇÕES</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form name="formsetores" id="formsetores" action="php/setor/salvar.php" method="POST">
+                                                <div class="form-group">
+                                                    <label>Nome</label>
+                                                    <p><%=t.getNome()%></p>
+                                                    
+                                                </div>
+                                                <div class=" form-group">
+                                                    <label>Email</label>
+                                                    <p><%=t.getEmail()%></p>
+                                                </div>
+                                                <div class=" form-group">
+                                                    <label>Telefone</label>
+                                                    <p><%=t.getTelefone()%></p>
+                                                </div>
+                                                <div class=" form-group">
+                                                    <label>Servico</label>
+                                                    <p><%=t.getServico()%></p>
+                                                </div>
+                                                <div class=" form-group">
+                                                    <label>Prazo</label>
+                                                    <p><%=t.getPrazo()%></p>
+                                                </div>
+                                                <div class=" form-group">
+                                                    <label>Prazo</label>
+                                                    <p><%=t.getPrazo()%></p>
+                                                </div>
+                                                
+                                                <div class=" form-group">
+                                                    <label>Estado</label>
+                                                    <p><%=t.getEstado()%></p>
+                                                </div>
+                                                
+                                                <div class=" form-group">
+                                                    <label>Cidade</label>
+                                                    <p><%=t.getCidade()%></p>
+                                                </div>
+                                                
+                                                <div class=" form-group">
+                                                    <label>Bairro</label>
+                                                    <p><%=t.getBairro()%></p>
+                                                </div>
+                                                
+                                                
+                                             </form>    
+                                        </div>
+                                        <div class="panel-body">
+                        
+                                    </div>
+                                                 
+                                           
+                                    </div>
+                                        
+                                </div>
+                        </div>
+                    </div>
+</div>
+
+    </div>
+        
+    </div>
+                                        
+                                        
+                                        
                                <% }     %>    
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-    </div>
-        
-    </div>
+                                    
                     
                     
                     

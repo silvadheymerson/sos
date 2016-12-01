@@ -62,8 +62,8 @@
     
     
     <div class="row">
-        <div class="col-lg-3"></div>    
-    <div class="col-lg-6">
+        <div class="col-lg-1"></div>    
+    <div class="col-lg-10">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Usuarios
@@ -76,6 +76,7 @@
                                             <th>#</th>
                                             <th>Nome</th>
                                             <th>Email</th>
+                                            <th>Data do Cadastro</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
@@ -86,6 +87,7 @@
                                             <td><%=t.getId()%></td>
                                             <td><%=t.getNome()%></td>
                                             <td><%=t.getEmail()%></td>
+                                            <td><%=t.getData()%></td>
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="alterarusuario.jsp?id=<%= t.getId()%>">Editar</a>
                                             <a class="btn btn-danger btn-xs"  href="excluirUsuario?id=<%=t.getId()%>">Excluir</a>
@@ -98,7 +100,7 @@
                         </div>
                     </div>
     </div>
-        <div class="col-lg-3"></div>    
+        <div class="col-lg-1"></div>    
     </div>
     
     

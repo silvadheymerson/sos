@@ -91,7 +91,7 @@ public class BuscaImpl implements BuscaDao {
 	public List<Busca> getListAll() {
 		List<Busca> list = new ArrayList<Busca>();
 		try {
-			String sql = "select o.id, o.nome, o.email, o.telefone , o.prazo , t.nome , o.descricao , o.data from ofertas o ,tipos_servicos t where t.id = o.servico order by o.id  ";
+			String sql = "select o.id, o.nome, o.email, o.telefone , o.prazo , t.nome , o.descricao , o.data , o.estado , o.cidade , o.bairro from ofertas o ,tipos_servicos t where t.id = o.servico order by o.id  ";
 			stmt = conn.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while(rs.next()){
@@ -104,6 +104,9 @@ public class BuscaImpl implements BuscaDao {
                                 busca.setServico(notNull(rs.getString(6)));
                                 busca.setDescricao(notNull(rs.getString(7)));
                                 busca.setData(notNull(rs.getString(8)));
+                                busca.setEstado(notNull(rs.getString(9)));
+                                busca.setCidade(notNull(rs.getString(10)));
+                                busca.setBairro(notNull(rs.getString(11)));
                                 
                                 
 				

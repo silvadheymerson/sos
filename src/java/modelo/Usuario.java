@@ -8,7 +8,7 @@ package modelo;
 public class Usuario{
     
     private int id;
-    private String nome, email , senha1 , senha2;
+    private String nome, email , senha1 , senha2 , data;
 
      public int getId() {
         return id;
@@ -50,6 +50,14 @@ public class Usuario{
     public void setSenha2(String senha2) {
         this.senha2 = senha2;
     }
+    
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    } 
 
 
 }

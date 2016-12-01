@@ -82,11 +82,8 @@
                                             <th>N°</th>
                                             <th>Nome</th>
                                             <th>Email</th>
-                                            <th>Telefone</th>
                                             <th>Tpo de Serviço</th>
                                             <th>Data</th>
-                                            <th>Descricao</th>
-                                            
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
@@ -97,10 +94,10 @@
                                             <td><%=t.getId()%></td>
                                             <td><%=t.getNome()%></td>
                                             <td><%=t.getEmail()%></td>
-                                            <td><%=t.getTelefone()%></td>
+                                            
                                             <td><%=t.getServico()%></td>
                                             <td><%=t.getData()%></td>
-                                            <td><%=t.getDescricao()%></td>
+                                            
                                             
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="#">Visualizar</a>
