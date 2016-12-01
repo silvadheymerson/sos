@@ -88,30 +88,27 @@
                                                                           </div>
                                                                           <div class="form-group">
                                                                             <label>Rua</label>
-                                                                            <input name="rua"  type="text" value="" id="rua" class="form-control">
+                                                                            <input name="rua"  type="text" value="" id="rua" class="form-control" disabled="disabled">
                                                                           </div>
                                                                           <div class="form-group">
                                                                             <label>Numero</label>
-                                                                            <input name="numero"  type="text" value="" id="numero" class="form-control">
+                                                                            <input name="numero"  type="text" value="" id="numero" class="form-control" >
                                                                           </div>  
                                                                           <div class="form-group ">
                                                                             <label>Bairro</label>
-                                                                            <input name="bairro" type="text" id="bairro" value="" class="form-control" >
+                                                                            <input name="bairro" type="text" id="bairro" value="" class="form-control" disabled="disabled">
                                                                           </div>
                                                                             <div class=" form-group">
                                                                                 <label>Cidade</label>
-                                                                                <input name="cidade" type="text" id="cidade" value="" class="form-control" >
+                                                                                <input name="cidade" type="text" id="cidade" value="" class="form-control" disabled="disabled" >
                                                                             </div>
 
                                                                             <div class=" form-group">
                                                                                 <label for="exampleInputEmail1">Estado</label>
-                                                                                <input name="uf" type="text" id="uf" class="form-control"  value="">
+                                                                                <input name="uf" type="text" id="uf" class="form-control"  value="" disabled="disabled">
                                                                             </div>
 
-                                                                            <div class=" form-group">
-                                                                                <label for="exampleInputEmail1">IBGE</label>
-                                                                                <input name="ibge" type="text" id="ibge" class="form-control" value="">
-                                                                            </div>
+                                                                            
                                                                             <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
                                                                                 <input id="textNome" name="nome" class="form-control"  type="text">
