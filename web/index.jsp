@@ -7,6 +7,14 @@
 <jsp:include page="layout_inicio.jsp" />
 <li class="active"><a href="index.jsp">Inicio</a></li>
                     <li><a href="servicos.jsp">Serviços</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Procurar<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profissionais.jsp">Profissionais</a></li>
+                            <li><a href="listar_servicos.jsp">Meus Serviços</a></li>
+                             
+                        </ul>
+                    </li>
                     
                     <li><a href="sobre.jsp">Sobre</a></li>  
                     <li><a href="contatos.jsp">Contatos</a></li>
