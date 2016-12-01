@@ -101,7 +101,7 @@
                                             
                                             <td>
                                             <a class="btn btn-warning btn-xs" href="#">Visualizar</a>
-                                           
+                                            <a class="btn btn-warning btn-xs" href="alterar_servico.jsp?id=<%= t.getId()%>">Editar</a>
                                             </td>
                                         </tr>
                                <% }     %>    
