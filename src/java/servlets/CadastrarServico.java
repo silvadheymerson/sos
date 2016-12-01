@@ -88,7 +88,7 @@ public class CadastrarServico extends HttpServlet {
         servico.setNumero(request.getParameter("numero"));
         servico.setBairro(request.getParameter("bairro"));
         servico.setCidade(request.getParameter("cidade"));
-        servico.setEstado(request.getParameter("estado"));
+        servico.setEstado(request.getParameter("uf"));
         
          ServicoImpl servicoDao = new ServicoImpl();//cria o objeto contatoDao
          

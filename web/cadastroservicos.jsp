@@ -84,7 +84,7 @@
                                                                           </div>
                                                                           <div class="form-group">
                                                                             <label>Rua</label>
-                                                                            <input name="rua"  type="text" value="" id="rua" class="form-control" disabled="disabled">
+                                                                            <input name="rua"  type="text" value="" id="rua" class="form-control" >
                                                                           </div>
                                                                           <div class="form-group">
                                                                             <label>Numero</label>
@@ -92,16 +92,16 @@
                                                                           </div>  
                                                                           <div class="form-group ">
                                                                             <label>Bairro</label>
-                                                                            <input name="bairro" type="text" id="bairro" value="" class="form-control" disabled="disabled">
+                                                                            <input name="bairro" type="text" id="bairro" value="" class="form-control" >
                                                                           </div>
                                                                             <div class=" form-group">
                                                                                 <label>Cidade</label>
-                                                                                <input name="cidade" type="text" id="cidade" value="" class="form-control" disabled="disabled" >
+                                                                                <input name="cidade" type="text" id="cidade" value="" class="form-control"  >
                                                                             </div>
 
                                                                             <div class=" form-group">
                                                                                 <label for="exampleInputEmail1">Estado</label>
-                                                                                <input name="uf" type="text" id="uf" class="form-control"  value="" disabled="disabled">
+                                                                                <input name="uf" type="text" id="uf" class="form-control"  value="" >
                                                                             </div>
                                                                             <div class="form-group">
 										<label for="textNome" class="control-label">Nome</label>
