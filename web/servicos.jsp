@@ -76,7 +76,7 @@
 						<figcaption>
 							<h3>Beleza</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 	        	</div>	
@@ -86,7 +86,7 @@
 						<figcaption>
 							<h3>Informatica</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -96,7 +96,7 @@
 						<figcaption>
 							<h3>Mecânico</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -106,7 +106,7 @@
 						<figcaption>
 							<h3>Fotografo</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -116,7 +116,7 @@
 						<figcaption>
 							<h3>Domestica</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -126,11 +126,11 @@
 						<figcaption>
 							<h3>Pedreiro</h3>
 							<span>Escolha um profissional</span>
-							<a href="portfolio-item.html">Clique Aqui</a>
+							<a href="#">Clique Aqui</a>
 						</figcaption>
 					</figure>
 				</div>
-                                <div class="col-md-4 col-sm-6">
+                             <!--   <div class="col-md-4 col-sm-6">
 					<figure>
 						<img src="img/portfolio/9.jpg" alt="img09">
 						<figcaption>
@@ -139,7 +139,7 @@
 							<a href="portfolio-item.html">Clique Aqui</a>
 						</figcaption>
 					</figure>
-				</div>
+				</div> -->
 			</ul>
 
 				
