@@ -25,7 +25,7 @@ public class ServicoImpl implements ServicoDao {
 	public void salvar(Servico servico) {
 		try {
 			String sql = "insert into servicos "
-                                + "(servico ,cep, nome, email, telefone) values(?,?,?,?,?)";
+                                + "(servico ,cep, nome, email, telefone, rua , numero , bairro , cidade , estado) values(?,?,?,?,? ,?,?,?,?,?)";
 			
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, servico.getServico());
@@ -33,6 +33,11 @@ public class ServicoImpl implements ServicoDao {
 			stmt.setString(3, servico.getNome());
                         stmt.setString(4, servico.getEmail());
                         stmt.setString(5, servico.getTelefone());
+                        stmt.setString(6, servico.getRua());
+                        stmt.setString(7, servico.getNumero());
+                        stmt.setString(8, servico.getBairro());
+                        stmt.setString(9, servico.getCidade());
+                        stmt.setString(10, servico.getEstado());
                         
 			stmt.execute();
 			

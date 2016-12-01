@@ -78,7 +78,7 @@
 
                                                                                     </select>
                                                                             </div>
-                                                                            <div class="form-group">
+                                                                          <div class="form-group">
                                                                             <label>CEP</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://www.buscacep.correios.com.br" target="_blank">Não lembra seu CEP?</a>
                                                                             <input name="cep" type="text" value="" class="form-control" id="cep" onblur="pesquisacep(this.value);">
                                                                           </div>
