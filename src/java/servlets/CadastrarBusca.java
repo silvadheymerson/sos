@@ -86,6 +86,11 @@ public class CadastrarBusca extends HttpServlet {
         busca.setTelefone(request.getParameter("telefone"));
         busca.setPrazo(request.getParameter("prazo"));
         busca.setDescricao(request.getParameter("descricao"));
+        busca.setRua(request.getParameter("rua"));
+        busca.setNumero(request.getParameter("numero"));
+        busca.setBairro(request.getParameter("bairro"));
+        busca.setCidade(request.getParameter("cidade"));
+        busca.setEstado(request.getParameter("uf"));
         
         
          BuscaImpl buscaDao = new BuscaImpl();//cria o objeto contatoDao

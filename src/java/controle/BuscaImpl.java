@@ -25,7 +25,7 @@ public class BuscaImpl implements BuscaDao {
 	public void salvar(Busca busca) {
 		try {
 			String sql = "insert into ofertas "
-                                + "(servico ,cep, nome, email, telefone , prazo , descricao) values(?,?,?,?,? , ? , ?)";
+                                + "(servico ,cep, nome, email, telefone , prazo , descricao , rua , numero , bairro , cidade , estado) values(?,?,?,?,? , ? , ? ,? ,? ,? ,? ,? )";
 			
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, busca.getServico());
@@ -35,6 +35,11 @@ public class BuscaImpl implements BuscaDao {
                         stmt.setString(5, busca.getTelefone());
                         stmt.setString(6, busca.getPrazo());
                         stmt.setString(7, busca.getDescricao());
+                        stmt.setString(8, busca.getRua());
+                        stmt.setString(9, busca.getNumero());
+                        stmt.setString(10, busca.getBairro());
+                        stmt.setString(11, busca.getCidade());
+                        stmt.setString(12, busca.getEstado());
                         
 			stmt.execute();
 			
