@@ -52,7 +52,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Listar de Proffisionais</h1>
+						<h1>Encontre o profissional que você precisa</h1>
 					</div>
 				</div>
 			</div>
@@ -70,7 +70,7 @@
     <div class="col-lg-10">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            E-mail Recentes
+                           Listar de profissionais 
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
